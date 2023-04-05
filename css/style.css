@@ -180,6 +180,8 @@ nav {
   padding: 0 20px;
 }
 
+
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -287,7 +289,12 @@ button#next {
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
+
+  .navbar-collapse {
+    margin-top:45px;
+    z-index: 5;
+  }
   .nav-links {
     display: none;
   }
