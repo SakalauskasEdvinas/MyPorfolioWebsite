@@ -13,6 +13,7 @@ body {
   font-family: "Inter",sans-serif;
   color: #343a40;
   line-height: 1;
+  padding-top: 70px;
 }
 
 h3 {
@@ -28,7 +29,9 @@ header {
   margin-top: 90px;
   /* background-image: linear-gradient(135deg, #9b6464 0%, #3b52a3 100%); */
 }
-
+.anchor {
+  scroll-margin-top: 200px;
+}
 section {
   background-color: white;
   margin: 2rem 2rem;
@@ -39,10 +42,7 @@ section {
   border: 1px solid #9b6464;
 }
 
-section:nth-child(3) {
-  width: 100%;
-  margin: 0;
-}
+
 
 form input {
   margin-bottom: 5px;
@@ -72,9 +72,9 @@ section p {
 
 
 .card {
-  width: 90%;
+  width: 96%;
   height: 420px;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
 .left {
@@ -101,6 +101,9 @@ section p {
   opacity: 1;
   transform: translateX(0);
 }
+
+
+
 
 footer {
    background-color: rgba(249, 249, 249);

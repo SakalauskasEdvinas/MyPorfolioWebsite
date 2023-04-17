@@ -27,10 +27,10 @@ function fade() {
 }
 
 
-var typed = new Typed('#text', {
+let typed = new Typed('#text', {
 strings: ['PORTFOLIO'],
 typeSpeed: 20,
-showCursor: true
+showCursor:false
 });
 
 
