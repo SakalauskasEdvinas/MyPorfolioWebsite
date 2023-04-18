@@ -2,29 +2,28 @@
   "name": "myporfoliowebsite",
   "version": "1.0.0",
   "description": "<h1>Project for correlation one development course </h1>",
-  "main": "index.js",
-    "scripts": {
-      "start": "parcel ./index.html",
-      "prebuild-dev": "shx rm -rf dist/*",
-      "build-dev": "parcel build ./index.html --no-optimize --public-url ./",
-      "prebuild": "shx rm -rf dist/*",
-      "build": "parcel build ./index.html --public-url ./",
-      "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
-    },
-    "devDependencies": {
-      "shx": "^0.3.2"
-    },
+"scripts": {
+    "start": "parcel ./index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url https://github.com/SakalauskasEdvinas/MyPorfolioWebsite/",
+    "deploy": "gh-pages -d dist"
+},
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
     "firebase": "^9.20.0",
+    "gh-pages": "^5.0.0",
     "just-validate": "^4.2.0",
     "toastify-js": "^1.12.0"
   },
-  "devDependencies": {
-    "parcel": "^2.8.3",
-    "process": "^0.11.10"
+  "headers": {
+    "/*": {
+      "Access-Control-Allow-Origin": "*"
+    }
   }
 }
