@@ -1,1 +1,12 @@
+# Dependency directories
+node_modules/
+dist/
+.parcel-cache/
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+
+# local history
 .lh/
