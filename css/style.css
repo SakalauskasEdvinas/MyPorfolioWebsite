@@ -48,10 +48,17 @@ form input {
   margin-bottom: 5px;
 }
 
+form label {
+  padding: 5px;
+}
+
 form button {
   margin-top:5px;
 }
 
+.input-wrapper {
+  margin: 5px;
+}
 
 
 

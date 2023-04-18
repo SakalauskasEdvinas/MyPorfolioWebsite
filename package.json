@@ -1,0 +1,23 @@
+{
+  "name": "myporfoliowebsite",
+  "version": "1.0.0",
+  "description": "<h1>Project for correlation one development course </h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "firebase": "^9.20.0",
+    "just-validate": "^4.2.0",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}
