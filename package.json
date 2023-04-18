@@ -4,7 +4,7 @@
   "description": "<h1>Project for correlation one development course </h1>",
 "scripts": {
     "start": "parcel ./index.html",
-    "predeploy": "rm -rf dist && parcel build index.html --public-url https://github.com/SakalauskasEdvinas/MyPorfolioWebsite/",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url https://sakalauskasedvinas.github.io/MyPorfolioWebsite/",
     "deploy": "gh-pages -d dist"
 },
   "devDependencies": {

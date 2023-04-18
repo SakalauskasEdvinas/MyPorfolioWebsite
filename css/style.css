@@ -60,7 +60,9 @@ form button {
   margin: 5px;
 }
 
-
+.just-validate-error-label {
+  padding: 5px;
+}
 
 section p {
   font-size: 1rem;
