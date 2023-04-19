@@ -110,7 +110,7 @@ async function storeForm(name, email, message) {
             name: name,
             email: email,
             message: message
-        }). finally(() => {
+        }).then(() => {
             showToast("Message sent successfully!");
         });
         console.log("Document written with ID: ", docRef);
@@ -131,7 +131,7 @@ function showToast(message) {
             background: "linear-gradient(to right, #00b09b, #96c93d)"
         },
         onClick: function () {} // Callback after click
-    });
+    }).showToast();
 }
 
 //validate form using just-validate and submit
@@ -176,9 +176,7 @@ validator
     ])
     .onSuccess((event) => {
         console.log(event.target)
-        event
-            .target
-            .reset();
+
         let name = document
             .querySelector("#name")
             .value;
@@ -193,5 +191,7 @@ validator
         console.log(email);
         console.log(message);
         storeForm(name, email, message);
-
+        event
+            .target
+            .reset();
     });

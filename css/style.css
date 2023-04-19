@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800;900&display=swap');
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -42,7 +43,25 @@ section {
   border: 1px solid #9b6464;
 }
 
+a.nav-link, .copyright-text {
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  color: #6065ac;
 
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+a.nav-link:hover {
+  background-image: linear-gradient(135deg, #9b6464 0%, #3b52a3 100%);
+  border-radius: 5%;
+  color: #fff;
+  opacity: 0.9;
+
+}
 
 form input {
   margin-bottom: 5px;
@@ -56,9 +75,7 @@ form button {
   margin-top:5px;
 }
 
-.input-wrapper {
-  margin: 5px;
-}
+
 
 .just-validate-error-label {
   padding: 5px;
@@ -76,6 +93,10 @@ section p {
   font-size: 0.9rem;
 }
 
+
+.btn-primary {
+  background-color: #4a69bd;
+}
 
 
 
