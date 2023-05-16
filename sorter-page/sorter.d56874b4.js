@@ -1,0 +1,2 @@
+function sortList(){const e=document.querySelector("#list").value.split(", ").map((e=>e.trim())).sort(((e,t)=>isNaN(e)||isNaN(t)?isNaN(e)?isNaN(t)?e.localeCompare(t):1:-1:e-t));console.log(e);const t=e.join(", ");let o=document.querySelector("#sorted-list");o.innerHTML="";let n=document.createElement("h2");n.innerHTML="Sorted List",o.appendChild(n),o.innerHTML+=t}
+//# sourceMappingURL=sorter.d56874b4.js.map
