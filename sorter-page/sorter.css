@@ -1,0 +1,39 @@
+label {
+    font-size: 1.2rem;
+  }
+  
+  input[type="text"] {
+    font-size: 1.2rem;
+  }
+  
+  #sorted-list {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+}
+
+section {
+    min-height: 700px;
+}
+
+#sorted-list {
+    border: 3px solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+margin: 0 auto;
+}

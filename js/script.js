@@ -135,6 +135,9 @@ function showToast(message) {
 }
 
 //validate form using just-validate and submit
+if(document.querySelector("#contact_form")) {
+
+
 const validator = new JustValidate(
     '#contact_form',
     {validateBeforeSubmitting: true}
@@ -195,3 +198,4 @@ validator
             .target
             .reset();
     });
+}
