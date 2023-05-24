@@ -58,7 +58,6 @@ fetch(url)
    
 
   }).then(() => {
-  //swiper to have project examples in a slider
   const swiper2 = new Swiper(".swiper-container", {
     // Optional parameters
     slidesPerView: "auto",
@@ -123,7 +122,6 @@ function getCityDetails(placeId) {
       console.log(place.geometry.location.lng())
       updateWeather(place.geometry.location.lat(),place.geometry.location.lng());
       document.querySelector("#city").innerHTML = place.name;
-      // Perform any further actions with the selected city
     }
   });
 }
@@ -150,7 +148,7 @@ function showAutocompleteResults(predictions) {
     predictions.forEach(prediction => {
       const listItem = document.createElement('li');
       listItem.textContent = prediction.description;
-      listItem.classList.add('list-group-item'); // Add Bootstrap class
+      listItem.classList.add('list-group-item');
       
       listItem.addEventListener('click', () => {
         cityInput.value = prediction.description;
