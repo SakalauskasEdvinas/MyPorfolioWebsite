@@ -1,3 +1,8 @@
+/* Live at  - https://sakalauskasedvinas.github.io/MyPorfolioWebsite/weather-widget/weather-widget.html - work in progress, so something might be not up to date depending on time of visit -->
+// Implemented a weather widget using google's places api and openweathermap.
+// Google places api was used to create a dropdown of city suggestions as you type in a city's name.
+// Weather api to retrive the forecast for next 7 days. */
+
 h1 {
     color: #6065ac;
     font-size: 1.3em;
@@ -51,13 +56,11 @@ img {
 
 .swiper-button-prev {
     left: var(--swiper-navigation-sides-offset,5px);
-    background-image: url(placeholder-image.jpg);
     font-weight: bolder;
     
 }
   
   .swiper-button-next {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
     right: var(--swiper-navigation-sides-offset,5px);
     font-weight: bolder;
 
